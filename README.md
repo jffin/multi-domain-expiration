@@ -14,13 +14,13 @@ git clone https://github.com/jffin/cookie_leaked_credentials.git
 
 **Install dependencies**
 
-### install with poetry
+*install with poetry*
 
 ```
 poetry install
 ```
 
-### install with pip
+*install with pip*
 
 ```
 python -m pip install -r requirements.txt
