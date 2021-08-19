@@ -19,6 +19,7 @@ python -m pip install -r requirements.txt
 ```
 
 ## Usage
+
 ```
 usage: entrypoint.py [-h] -i INPUT -o OUTPUT
 
