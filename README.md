@@ -8,21 +8,28 @@ Under the hood, it uses the python-whois library, which is just a wrapper around
 ## Installation
 **Clone repository**
 
-``git clone https://github.com/jffin/cookie_leaked_credentials.git``
+```
+git clone https://github.com/jffin/cookie_leaked_credentials.git
+```
 
 **Install dependencies**
 
 ### install with poetry
 
-``poetry install``
+```
+poetry install
+```
 
 ### install with pip
 
-``python -m pip install -r requirements.txt``
+```
+python -m pip install -r requirements.txt
+```
 
 ## Usage
 
-```usage: entrypoint.py [-h] -i INPUT -o OUTPUT
+```
+usage: entrypoint.py [-h] -i INPUT -o OUTPUT
 
 Domains Expiration
 
