@@ -27,7 +27,8 @@ class WhoisWrapper:
         :return: list[dict[str, str]] results in dictionary containing results.
         """
         obj: 'WhoisWrapper' = cls(targets=targets)
-        return [obj.clean_result(result) for target in obj.targets if (result := obj.is_registered(target.strip()))]
+        return [obj.clean_result(result) for target in obj.targets
+                if (result := obj.is_registered(obj._clean_target(target)))]
 
     def clean_result(self, result: whois) -> dict[str, str]:
         """
@@ -59,6 +60,10 @@ class WhoisWrapper:
             return False
         else:
             return w if w.domain_name else False
+
+    @staticmethod
+    def _clean_target(target: str) -> str:
+        return target.strip()
 
     @staticmethod
     def get_updates_dates(updated_date: Union[str, list]) -> Union[str, list]:
