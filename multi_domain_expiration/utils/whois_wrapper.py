@@ -38,7 +38,7 @@ class WhoisWrapper:
         expiration_date: datetime = self.get_expiration_date(expiration_date=result.expiration_date)
         return {
             'exist': True,
-            'target': result.domain_name,
+            'target': result.domain,
             'expiration_date': str(result.expiration_date),
             'expired': self.is_expired(expiration_date=expiration_date),
             'expire_soon': self.is_expire_soon(expiration_date=expiration_date),
